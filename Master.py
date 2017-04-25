@@ -24,19 +24,45 @@
 #2 print statements
 
 #SOPHIA
-#pip install lxml
-#import lxml.html as LH
+import lxml.html as LH
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
 shoes = pd.read_html('http://www.shoemetro.com/t-shoe-size-chart.aspx')
-shoes.sample(10)
-
+#print(shoes)
 
 #COURTNEY
-#
-#
+
+gender = input("Are you a male or female? ")
+shoes = input("Are you shopping for shoes? [y/n] ")
+
+#Male/Yes
+if gender == 'male' or gender =='m' and shoes == 'y' or shoes == 'yes':
+    home = input("What is your country of residence? ")
+    location = input("What country is the brand you're shopping for from? ")
+#Male/No
+elif gender == 'male' or gender =='m' and shoes == 'n' or shoes == 'no':
+    clothes = input("Are you shopping for clothes? [y/n]")
+    if clothes == 'y' or clothes == 'yes':
+        home = input("What is your country of residence? ")
+        location = input("What country is the brand you're shopping for from? ")
+    else:
+        print("Program has quit.")
+#Female/Yes
+elif gender == 'female' or gender =='f' and shoes == 'y' or shoes == 'yes':
+    home = input("What is your country of residence? ")
+    location = input("What country is the brand you're shopping for from? ")
+#Female/No
+elif gender == 'female' or gender =='f' and shoes == 'n' or shoes == 'no':
+    clothes = input("Are you shopping for clothes? [y/n]")
+    if clothes == 'y' or clothes == 'yes':
+        home = input("What is your country of residence? ")
+        location = input("What country is the brand you're shopping for from? ")
+    else:
+        print("Program has quit.")   
+else:
+    print("Program has quit.")
 
 
 #CHRISTINA
