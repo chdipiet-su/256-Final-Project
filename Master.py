@@ -24,8 +24,14 @@
 #2 print statements
 
 #SOPHIA
-#
-#
+#pip install lxml
+#import lxml.html as LH
+import pandas as pd
+import warnings
+warnings.filterwarnings('ignore')
+
+shoes = pd.read_html('http://www.shoemetro.com/t-shoe-size-chart.aspx')
+shoes.sample(10)
 
 
 #COURTNEY
