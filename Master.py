@@ -30,10 +30,10 @@ import warnings
 warnings.filterwarnings('ignore')
 
 shoes = pd.read_html('http://www.shoemetro.com/t-shoe-size-chart.aspx')
-#print(shoes)
+print(shoes)
 
 #COURTNEY
-
+"""
 gender = input("Are you a male or female? ")
 shoes = input("Are you shopping for shoes? [y/n] ")
 
@@ -64,7 +64,7 @@ elif gender == 'female' or gender =='f' and shoes == 'n' or shoes == 'no':
 else:
     print("Program has quit.")
 
-
+"""
 #CHRISTINA
 #
 #
