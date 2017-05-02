@@ -33,7 +33,7 @@ shoes = pd.read_html('http://www.shoemetro.com/t-shoe-size-chart.aspx')
 print(shoes)
 
 #COURTNEY
-"""
+
 gender = input("Are you a male or female? ")
 gender = gender.lower()
 shoes = input("Are you shopping for shoes? [y/n] ")
@@ -72,7 +72,7 @@ elif gender == 'female' or gender =='f' and shoes == 'n' or shoes == 'no':
 else:
     print("Program has quit.")
 
-"""
+
 #CHRISTINA
 #
 #
@@ -86,8 +86,6 @@ give new_location which is whatever continent their home country is in (eure, uk
 match up new_location with size
 
 new_size = shoes[[home, 
-
-
 
 """
 
