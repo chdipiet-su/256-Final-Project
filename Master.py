@@ -1,7 +1,6 @@
 #TO DO:
 #find HTML table of sizes
 #STEPS:
-
 #User is asked if they are male or female
 #User is asked if they're shopping for shoes? (Bool=true) 
 #User is asked what their country of residence is (string value)
