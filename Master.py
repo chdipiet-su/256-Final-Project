@@ -30,6 +30,7 @@ warnings.filterwarnings('ignore')
 
 shoes = pd.read_html('http://www.shoemetro.com/t-shoe-size-chart.aspx')
 print(shoes)
+<<<<<<< HEAD
 
 '''
 Notes
@@ -49,6 +50,8 @@ Notes
 
 
 
+=======
+>>>>>>> upstream/master
 
 #COURTNEY
 
@@ -112,8 +115,6 @@ Be able to match that varable with the name of the column on the HTML table
 Iterate through that specific column looking for 'size'
 Find where size exists in column under continent of origin on HTML table and return the entire corresponding row in the form of a dataframe
 Create a string sntence to print out that is populated with new variables
-
-
 
 
 
