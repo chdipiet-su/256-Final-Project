@@ -30,7 +30,26 @@ import warnings
 warnings.filterwarnings('ignore')
 
 shoes = pd.read_html('http://www.shoemetro.com/t-shoe-size-chart.aspx')
-#print(shoes)
+print(shoes)
+
+'''
+Notes
+-write more functions up front to shorten input statements
+-for each task there should be simple solution
+-filter dataframe (look in pandas doc towards the bottom
+-filter by column = us and size = 7 then grab that index key and return the whole row from the dataframe
+-can use OR in loops as long as there are | pipes | around them
+-ln 42 in Pandas doc for filtering except we want 'US' == '7'
+-tables are in order of [0], [1], [2], [3] instead of mens, womens, girls, boys
+
+'''
+
+
+
+
+
+
+
 
 #COURTNEY
 
@@ -85,7 +104,18 @@ usa = ['usa', 'u.s.a.', 'america', 'north america']
 give new_location which is whatever continent their home country is in (eure, uk, or usa)
 match up new_location with size
 
-new_size = shoes[[home, 
+new_size = shoes[[home,
+
+TO DO:
+
+For loops that iterate through 3 country lists to find continent of origin (return value, 'home_continent' - just a new name for the list that already exisit)
+Be able to match that varable with the name of the column on the HTML table
+Iterate through that specific column looking for 'size'
+Find where size exists in column under continent of origin on HTML table and return the entire corresponding row in the form of a dataframe
+Create a string sntence to print out that is populated with new variables
+
+
+
 
 
 
