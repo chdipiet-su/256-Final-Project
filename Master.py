@@ -29,6 +29,17 @@ shoes = pd.read_html('http://www.shoemetro.com/t-shoe-size-chart.aspx')
 
 w_shoes = shoes[2]
 m_shoes = shoes[3]
+#print(w_shoes)
+
+
+columns = {
+    ["size_column1" == w_shoes[0] ] #US
+    ["size_column2" == w_shoes[1] ] #euro
+    ["size_column3" == w_shoes[2] ] #UK
+    ["size_column4" == w_shoes[3] ] #inches
+    ["size_column5" == w_shoes[3] ] #CM
+}
+print(column)
 
 conts = {
     "euro": ['germany', 'italy', 'france', 'switzerland', 'poland', 'netherlands', 'the netherlands', 'ukraine', 'greece', 'austria', 'sweden', 'norway', 'malta', 'czech republic', 'belgium', 'iceland', 'finland', 'croatia', 'cyprus', 'romania', 'hungary', 'denmark', 'bulgaria', 'luxembourg', 'monaco', 'slovenia', 'serbia', 'vatican city', 'albania', 'lithuania', 'belarus', 'montenegro', 'estonia', 'moldova', 'slovakia', 'bosnia', 'herzegovina', 'kosovo', 'latvia', 'san marino', 'macedonia', 'liechtenstein', 'andorra', 'gibraltar', 'faroe islands', 'isle of man', 'jersey', 'svalbard', 'jan mayen', 'aland islands'],
@@ -57,18 +68,23 @@ def get_continent_list(home, dict_of_conts):
         if home in dict_of_conts[key]:
             return dict_of_conts[key]
 
+
 result = get_continent_list(home, conts)
-#print(result)
+print(result)
+
+'''
 
 def get_size_df(get_continent_list, size):
-     return w_shoes[w_shoes[result] == size]
+     #return w_shoes[w_shoes[result] == size]
 
 result_2 = get_size_df(get_continent_list, conts)
 print(result_2)
+'''
 
 
     
-
+get_size = w_shoes[[result][size]]
+print(get_size)
 
 
 
