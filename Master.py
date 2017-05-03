@@ -1,6 +1,7 @@
 #TO DO:
 #find HTML table of sizes
 #STEPS:
+
 #User is asked if they are male or female
 #User is asked what their country of residence is (string value)
 #User is asked where the brand they are shopping for is based (string value)
