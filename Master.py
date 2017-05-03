@@ -58,19 +58,23 @@ def get_continent_list(home, dict_of_conts):
             return dict_of_conts[key]
 
 result = get_continent_list(home, conts)
-#print(result)
+print(result)
 
+#^^^^^ DONT TOUCH ^^^
+'''
 def get_size_df(get_continent_list, size):
      return w_shoes[w_shoes[result] == size]
 
 result_2 = get_size_df(get_continent_list, conts)
 print(result_2)
-
+'''
 
     
 
 
-
+for cont in dict_of_conts():
+    if cont['USA'] == size:
+        print("%s with a size of %.3f is on the Dean's list." % (student['Name'], student['GPA']) )
 
 
 
