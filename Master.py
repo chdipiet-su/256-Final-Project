@@ -55,9 +55,12 @@ def get_continent_list(home, dict_of_conts):
 result = get_continent_list(home, conts)
 #print(result)
 
-
 #WOMEMN
 w_shoes.columns = ['US', 'Euro', 'UK', 'Inches', 'CM']
+#MEN
+m_shoes.columns = ['US', 'Euro', 'UK', 'Inches', 'CM']
+
+print("You are a size %s in the %s, which means your sizes will be: " % (size, home.title()))
 
 #US
 if result == conts["usa"]:
@@ -74,10 +77,6 @@ elif result == conts["uk"]:
 else:
     print("Invalid")
 
-
-#MEN
-m_shoes.columns = ['US', 'Euro', 'UK', 'Inches', 'CM']
-
 #US
 if result == conts["usa"]:
     chart = m_shoes[ m_shoes['US'] == size]
@@ -92,4 +91,5 @@ elif result == conts["uk"]:
     print(chart)
 else:
     print("Invalid")
+
 
